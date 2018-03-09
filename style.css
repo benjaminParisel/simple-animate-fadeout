@@ -1,0 +1,54 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    font-family: 'Lato', sans-serif;
+}
+.container{
+    display:block;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+}
+
+.pad{
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    opacity: 0.9;
+}
+
+.box#red{
+    word-wrap: break-word;
+    background-color: red;
+}
+.box#yellow{
+    background-color: yellow;
+}
+.box#green{
+    background-color: darkgreen;
+}
+
+.removed {
+    animation: disapear 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes disapear{
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        height: 0;
+    }
+}
